@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Detalles del Curso</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <ion-item>
+        Título: {{curso.titulo}}
+      </ion-item>
+      <ion-item>
+        Organizador: {{curso.organizador}}
+      </ion-item>
+      <ion-item>
+        Horas: {{curso.horas}}
+      </ion-item>
+      <ion-item>
+        Asistentes: {{curso.asistentes}}
+      </ion-item>
+      <ion-item>
+        Fechas: {{curso.fechas}}
+      </ion-item>
+      <ion-item>
+        Oservaciones: {{curso.observaciones}}
+      </ion-item>
+      <ion-item>
+        Fecha Ult. Modif.: {{curso.fechamodif}}
+      </ion-item>
+
+  </ion-list>
+  
+</ion-content>
+

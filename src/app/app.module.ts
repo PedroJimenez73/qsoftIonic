@@ -2,16 +2,14 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
-import { ClientesPage } from '../pages/clientes/clientes';
-import { DetallesPage } from '../pages/detalles/detalles';
-import { EdicionPage } from '../pages/edicion/edicion';
-import { Addproveedor } from '../pages/addproveedor/addproveedor';
-import { Edicion2} from '../pages/edicion2';
 
+import { CursosPage } from '../pages/cursos/cursos';
+import { ViewCursoPage } from '../pages/cursos/viewcurso';
+import { AddCursoPage } from '../pages/cursos/addcurso';
+import { EditCursoPage } from '../pages/cursos/editcurso';
+ 
+import { Cursos } from '../providers/cursos';
 
-import { Proveedores } from '../providers/proveedores'; 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -19,13 +17,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ClientesPage,
-    DetallesPage,
-    EdicionPage,
-    Addproveedor,
-    Edicion2
+    CursosPage,
+    ViewCursoPage,
+    AddCursoPage,
+    EditCursoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -34,18 +29,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    ClientesPage,
-    DetallesPage,
-    EdicionPage,
-    Addproveedor,
-    Edicion2
+    CursosPage,
+    ViewCursoPage,
+    AddCursoPage,
+    EditCursoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    Proveedores,
+    Cursos,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cursos</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addCurso()"><ion-icon name="add"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+    <ion-card *ngFor="let curso of cursos" >
+ 
+      <ion-card-header>
+  
+        <h1>{{curso.titulo}}</h1>
+  
+      </ion-card-header>
+      <ion-card-content>
+          <button ion-button (click)="viewCurso(curso)">Visualizar</button>
+          <button ion-button color="secondary" (click)="editCurso(curso)">Editar</button>
+          <button ion-button color="danger" (click)="deleteCurso(curso)">Borrar</button>
+      </ion-card-content>
+ 
+
+    </ion-card>
+ 
+</ion-content>

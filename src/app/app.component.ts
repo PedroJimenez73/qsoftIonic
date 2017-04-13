@@ -6,8 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
-import { ClientesPage } from '../pages/clientes/clientes';
+
+import { CursosPage } from '../pages/cursos/cursos';
 
 
 @Component({
@@ -31,8 +31,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Inicio', component: HelloIonicPage },
-      { title: 'Proveedores', component: ListPage },
-      { title: 'Clientes' , component: ClientesPage }
+      { title: 'Formación' , component: CursosPage }
     ];
   }
 
