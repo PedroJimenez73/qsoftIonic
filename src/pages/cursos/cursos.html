@@ -4,7 +4,7 @@
     <button ion-button menuToggle>
     <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Cursos</ion-title>
+    <ion-title> Plan Anual de Formación</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="addCurso()"><ion-icon name="add"></ion-icon></button>
     </ion-buttons>
@@ -14,9 +14,9 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content center>
  
-    <ion-card *ngFor="let curso of cursos" >
+    <ion-card *ngFor="let curso of cursos" text-center>
  
       <ion-card-header>
   
@@ -24,9 +24,9 @@
   
       </ion-card-header>
       <ion-card-content>
-          <button ion-button (click)="viewCurso(curso)">Visualizar</button>
-          <button ion-button color="secondary" (click)="editCurso(curso)">Editar</button>
-          <button ion-button color="danger" (click)="deleteCurso(curso)">Borrar</button>
+          <button ion-button icon-only (click)="viewCurso(curso)"><ion-icon name="eye"></ion-icon></button>
+          <button ion-button icon-only color="secondary" (click)="editCurso(curso)"><ion-icon name="paper"></ion-icon></button>
+          <button ion-button icon-only color="danger" (click)="deleteCurso(curso)"><ion-icon name="trash"></ion-icon></button>
       </ion-card-content>
  
 
