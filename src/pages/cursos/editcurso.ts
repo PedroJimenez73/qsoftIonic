@@ -54,7 +54,9 @@ export class EditCursoPage {
  
   }
 
-  
+  close(): void {
+    this.viewCtrl.dismiss();
+  }
 
 
  

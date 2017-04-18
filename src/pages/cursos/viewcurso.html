@@ -1,10 +1,10 @@
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Detalles del Curso</ion-title>
+  <ion-navbar hideBackButton>
+    <ion-title>Detalles Curso {{curso.titulo}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 
 

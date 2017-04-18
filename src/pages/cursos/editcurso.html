@@ -1,13 +1,10 @@
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-    </button>
+  <ion-navbar hideBackButton>
     <ion-title>Editar Curso {{curso.titulo}}</ion-title>
-    <!--ion-buttons end>
+    <ion-buttons end>
       <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
-    </ion-buttons-->
+    </ion-buttons>
   </ion-navbar>
 
 
@@ -23,7 +20,7 @@
  
     <ion-item>
       <ion-label floating>Organizador</ion-label>
-      <ion-textarea [(ngModel)]="curso.organizador" type="text"></ion-textarea>
+      <ion-input [(ngModel)]="curso.organizador" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -33,7 +30,7 @@
  
     <ion-item>
       <ion-label floating>Asistentes</ion-label>
-      <ion-textarea [(ngModel)]="curso.asistentes" type="text"></ion-textarea>
+      <ion-input [(ngModel)]="curso.asistentes" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -43,7 +40,7 @@
  
     <ion-item>
       <ion-label floating>Observaciones</ion-label>
-      <ion-textarea [(ngModel)]="curso.observaciones" type="text"></ion-textarea>
+      <ion-input [(ngModel)]="curso.observaciones" type="text"></ion-input>
     </ion-item>
 
     <ion-item>

@@ -1,14 +1,19 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton>
+    
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img src="../../assets/LogotipoBarra.png" alt="Logotipo">
+    <div text-right>
+      <img class="logo" src="../../assets/LogotipoBarra.png" alt="Logotipo">
+    </div>
+    
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
+
 <div text-center>
   <h2>Mapa de Procesos</h2>
 </div>
@@ -16,7 +21,7 @@
   <button ion-button class="blue" (click)="goToCursos()">Plan Formación</button>
 </div>
 <div text-center>
-  <button ion-button class="red" >Proveedores</button>
+  <button ion-button class="red" (click)="goToProves()">Proveedores</button>
 </div>
 <div text-center>
   <button ion-button class="orange">Clientes</button>

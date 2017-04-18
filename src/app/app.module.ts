@@ -12,6 +12,13 @@ import { Cursos } from '../providers/cursos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LoginPage } from "../pages/login/login";
+import { Auth } from "../providers/auth";
+import { ProvesPage } from "../pages/provee/provees";
+import { AddProvePage } from "../pages/provee/addprove";
+import { EditProvePage } from "../pages/provee/editprove";
+import { ViewProvePage } from "../pages/provee/viewprove";
+import { Proves } from "../providers/proves";
 
 @NgModule({
   declarations: [
@@ -20,7 +27,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CursosPage,
     ViewCursoPage,
     AddCursoPage,
-    EditCursoPage
+    EditCursoPage,
+    LoginPage,
+    ProvesPage,
+    AddProvePage,
+    EditProvePage,
+    ViewProvePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -32,12 +44,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CursosPage,
     ViewCursoPage,
     AddCursoPage,
-    EditCursoPage
+    EditCursoPage,
+    LoginPage,
+    ProvesPage,
+    AddProvePage,
+    EditProvePage,
+    ViewProvePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Cursos,
+    Auth,
+    Proves,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

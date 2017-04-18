@@ -1,5 +1,5 @@
 <ion-header>
- <ion-toolbar>
+ <ion-toolbar hideBackButton>
   <ion-title>Nuevo Curso</ion-title>
   <ion-buttons end>
     <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
@@ -18,7 +18,7 @@
  
     <ion-item>
       <ion-label floating>Organizador</ion-label>
-      <ion-textarea [(ngModel)]="organizador"></ion-textarea>
+      <ion-input [(ngModel)]="organizador"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -28,7 +28,7 @@
  
     <ion-item>
       <ion-label floating>Asistentes</ion-label>
-      <ion-textarea [(ngModel)]="asistentes"></ion-textarea>
+      <ion-input [(ngModel)]="asistentes"></ion-input>
     </ion-item>
 
         <ion-item>
@@ -38,7 +38,7 @@
  
     <ion-item>
       <ion-label floating>Observaciones</ion-label>
-      <ion-textarea [(ngModel)]="observaciones"></ion-textarea>
+      <ion-input [(ngModel)]="observaciones"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label floating>Fecha Ult. Modif.</ion-label>

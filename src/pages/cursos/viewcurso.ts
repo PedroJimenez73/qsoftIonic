@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NavController, NavParams} from 'ionic-angular';
+import { NavController, NavParams, ViewController} from 'ionic-angular';
 import { Cursos } from '../../providers/cursos';
 
 
@@ -13,12 +13,14 @@ export class ViewCursoPage {
 
 
  
-  constructor(public nav: NavController, public cursoService: Cursos, public navParams: NavParams) {
+  constructor(public nav: NavController, public cursoService: Cursos, public navParams: NavParams, public viewCtrl: ViewController) {
     this.curso = navParams.get('curso');
 
   }
  
-  
+  close(): void {
+    this.viewCtrl.dismiss();
+  }
 
 
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { CursosPage } from '../cursos/cursos';
+import { ProvesPage } from "../provee/provees";
 
 
 @Component({
@@ -16,6 +17,10 @@ export class HelloIonicPage {
  
   goToCursos() {
     this.nav.push(CursosPage);
+  }
+
+  goToProves() {
+    this.nav.push(ProvesPage);
   }
 
 }

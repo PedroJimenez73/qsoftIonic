@@ -1,0 +1,72 @@
+
+<!--ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header-->
+
+
+<ion-content padding>
+  <div text-center>
+        <img src="../../assets/LogotipoBarra.png" alt="Logotipo">
+   </div>
+  <ion-list>
+    <form #loginForm="ngForm" novalidate>
+      <ion-item>
+        <ion-label floating color="primary">Mail</ion-label>
+        <ion-input [(ngModel)]="login.username" 
+                   name="username" 
+                   type="text" 
+                   #username="ngModel"
+                   autocapitalize="off"
+                   required>
+
+        </ion-input>
+      </ion-item>
+
+      <p [hidden]="username.valid || submitted == false" color="danger" padding-left>
+        Introduzca un mail por favor
+      </p>
+      <!-- ./validación username -->
+
+      <!-- input password -->
+      <ion-item>
+        <ion-label floating color="primary">Contraseña</ion-label>
+        <ion-input 
+          [(ngModel)]="login.password" 
+          name="password" 
+          type="password" 
+          #password="ngModel" 
+          required
+        >
+        </ion-input>
+      </ion-item>
+      <!-- ./input password -->
+
+      <!-- validación password -->
+      <p [hidden]="password.valid || submitted == false" color="danger" padding-left>
+        Introduzca una contraseña por favor
+      </p>
+      <!-- ./validación password -->
+
+      <ion-row responsive-sm>
+
+        <!-- boton submit -->
+        <ion-col>
+          <button 
+            ion-button 
+            (click)="onLogin(loginForm)" 
+            type="submit" 
+            color="primary" 
+            block
+          >
+            Iniciar sesión
+          </button>
+        </ion-col>
+
+      </ion-row>
+      
+    </form>
+  </ion-list>
+</ion-content>

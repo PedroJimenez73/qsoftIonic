@@ -1,16 +1,27 @@
 page-hello-ionic {
     .blue{
-        background-color: dodgerblue;
+        background-color: #0074D9;
         min-width: 70%;
     }
     
     .red{
-        background-color: darkred;
+        background-color: #28b779;
         min-width: 70%;
     }
     .orange{
-        background-color: orange;
+        background-color: #da9628;
         min-width: 70%;
     }
+
+    .green{
+        background-color: #da542e;
+        min-width: 70%;
+    }
+
+    .logo {
+        padding-right: 10px;
+    }
+
+    
 
 }
